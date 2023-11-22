@@ -84,13 +84,6 @@ return {
 					end,
 				},
 			})
-
-            require("lspconfig").sourcekit.setup({
-                cmd = { "xcrun", "sourcekit-lsp" },
-                filetypes = { "swift" },
-                -- root_dir = require("lspconfig").util.root_pattern("Package.swift"),
-                root_dir = require("lspconfig").util.root_pattern("*"),
-            })
 		end,
 	},
 }
