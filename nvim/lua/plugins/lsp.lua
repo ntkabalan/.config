@@ -23,7 +23,7 @@ return {
 		"hrsh7th/nvim-cmp",
 		event = "InsertEnter",
 		dependencies = {
-            { "saadparwaiz1/cmp_luasnip" },
+			{ "saadparwaiz1/cmp_luasnip" },
 			{ "L3MON4D3/LuaSnip" },
 			{ "rafamadriz/friendly-snippets" },
 		},
@@ -37,7 +37,7 @@ return {
 			local cmp_action = lsp_zero.cmp_action()
 			local cmp_select = { behavior = cmp.SelectBehavior.Select }
 
-            require("luasnip.loaders.from_vscode").lazy_load()
+			require("luasnip.loaders.from_vscode").lazy_load()
 
 			cmp.setup({
 				formatting = lsp_zero.cmp_format(),
@@ -54,14 +54,14 @@ return {
 				}),
 				snippet = {
 					expand = function(args)
-                        require("luasnip").lsp_expand(args.body)
+						require("luasnip").lsp_expand(args.body)
 					end,
 				},
-                sources = {
-                    { name = "luasnip" },
-                    { name = "nvim_lsp" },
-                    { name = "buffer" },
-                },
+				sources = {
+					{ name = "luasnip" },
+					{ name = "nvim_lsp" },
+					{ name = "buffer" },
+				},
 			})
 		end,
 	},
