@@ -14,6 +14,7 @@ return {
 				lua = { "stylua" },
 				markdown = { "prettier" },
                 python = { "isort", "black" },
+                rust = { "rustfmt" },
 				typescript = { "prettier" },
 				typescriptreact = { "prettier" },
 				vue = { "prettier" },
