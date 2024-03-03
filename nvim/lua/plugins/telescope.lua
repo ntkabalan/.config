@@ -41,5 +41,12 @@ return {
 		vim.keymap.set("n", "<leader>fg", builtin.live_grep, {})
 		vim.keymap.set("n", "<leader>fb", builtin.buffers, {})
 		vim.keymap.set("n", "<leader>fh", builtin.help_tags, {})
+		vim.keymap.set("n", "<leader>f/", function()
+			local themes = require("telescope.themes")
+
+			builtin.current_buffer_fuzzy_find(themes.get_dropdown({
+				previewer = false,
+			}))
+		end, {})
 	end,
 }
