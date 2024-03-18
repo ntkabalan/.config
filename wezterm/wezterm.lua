@@ -32,4 +32,11 @@ config.harfbuzz_features = { "calt=0", "clig=0", "liga=0" }
 -- disable error sounds
 config.audible_bell = "Disabled"
 
+-- keybindings
+config.keys = {
+    -- make option + left/right arrow keys jump to previous/next word respectively
+	{ key = "LeftArrow", mods = "OPT", action = wezterm.action({ SendString = "\x1bb" }) },
+	{ key = "RightArrow", mods = "OPT", action = wezterm.action({ SendString = "\x1bf" }) },
+}
+
 return config
