@@ -34,7 +34,7 @@ config.audible_bell = "Disabled"
 
 -- keybindings
 config.keys = {
-    -- make option + left/right arrow keys jump to previous/next word respectively
+	-- make option + left/right arrow keys jump to previous/next word respectively
 	{ key = "LeftArrow", mods = "OPT", action = wezterm.action({ SendString = "\x1bb" }) },
 	{ key = "RightArrow", mods = "OPT", action = wezterm.action({ SendString = "\x1bf" }) },
 }
