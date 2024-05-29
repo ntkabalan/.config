@@ -98,6 +98,26 @@ return {
 					end,
 				},
 			})
+
+            -- configuration to get the vue language server working
+            -- context here: https://github.com/williamboman/mason-lspconfig.nvim/issues/371
+			require("lspconfig").volar.setup({
+				filetypes = {
+					"javascript",
+					"javascriptreact",
+                    "typescript",
+					"typescriptreact",
+                    "vue",
+				},
+				init_options = {
+					vue = {
+						hybridMode = false,
+					},
+					typescript = {
+						tsdk = vim.fn.getcwd() .. "/node_modules/typescript/lib",
+					},
+				},
+			})
 		end,
 	},
 }
