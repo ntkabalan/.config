@@ -99,15 +99,15 @@ return {
 				},
 			})
 
-            -- configuration to get the vue language server working
-            -- context here: https://github.com/williamboman/mason-lspconfig.nvim/issues/371
+			-- configuration to get the vue language server working
+			-- context here: https://github.com/williamboman/mason-lspconfig.nvim/issues/371
 			require("lspconfig").volar.setup({
 				filetypes = {
 					"javascript",
 					"javascriptreact",
-                    "typescript",
+					"typescript",
 					"typescriptreact",
-                    "vue",
+					"vue",
 				},
 				init_options = {
 					vue = {
