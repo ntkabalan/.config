@@ -103,10 +103,6 @@ return {
 			-- context here: https://github.com/williamboman/mason-lspconfig.nvim/issues/371
 			require("lspconfig").volar.setup({
 				filetypes = {
-					"javascript",
-					"javascriptreact",
-					"typescript",
-					"typescriptreact",
 					"vue",
 				},
 				init_options = {
