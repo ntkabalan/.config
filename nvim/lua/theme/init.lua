@@ -1,5 +1,5 @@
 -- set colorscheme
-local name = "rose-pine"
+local name = "default"
 
 -- if theme is not installed, set habamax as default
 local theme_ok = pcall(vim.cmd.colorscheme, name)

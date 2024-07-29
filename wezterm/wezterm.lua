@@ -3,15 +3,44 @@ local config = {}
 
 -- theme
 -- config.color_scheme = "Gruvbox Material (Gogh)"
-config.color_scheme = "rose-pine"
-config.colors = {
-	-- gruvbox
-	-- cursor_bg = "#d4be98",
-	-- cursor_fg = "#282828",
+-- config.color_scheme = "rose-pine"
+-- config.colors = {
+-- 	-- gruvbox
+-- 	cursor_bg = "#d4be98",
+-- 	cursor_fg = "#282828",
+--
+-- 	-- rose-pine
+-- 	cursor_bg = "#f2e9e1",
+-- 	cursor_fg = "#26233a",
+-- }
 
-	-- rose-pine
-	cursor_bg = "#f2e9e1",
-	cursor_fg = "#26233a",
+config.colors = {
+	foreground = "#e7e9f1",
+	background = "#14161b",
+	cursor_bg = "#d4be98",
+	cursor_fg = "#1e1e1e",
+	-- selection_bg = "#404040",
+	-- selection_fg = "#d4be98",
+	ansi = {
+		"#1e1e1e", -- black
+		"#f7768e", -- red
+		"#bfffcd", -- green
+		"#e0af68", -- yellow
+		"#7aa2f7", -- blue
+		"#adedb9", -- magenta
+		"#a1d5f7", -- cyan
+		"#a9b1d6", -- white
+	},
+	brights = {
+		"#414868", -- bright black
+		"#f7768e", -- bright red
+		"#bfffcd", -- bright green
+		"#e0af68", -- bright yellow
+		"#7aa2f7", -- bright blue
+		"#adedb9", -- bright magenta
+		"#a1d5f7", -- bright cyan
+		"#c0caf5", -- bright white
+	},
 }
 
 config.font = wezterm.font("Menlo")
