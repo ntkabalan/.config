@@ -4,7 +4,7 @@ if [[ $# -eq 1 ]]; then
     selected=$1
 else
     DIRS="$(echo ~/.config && find ~/Developer/github ~/Developer/sandbox -mindepth 1 -maxdepth 1 -type d)"
-    selected=$(echo $DIRS | fzf --color=bg+:#232136,gutter:-1)
+    selected=$(echo $DIRS | fzf --color=bg+:#2c2e33,gutter:-1)
 fi
 
 if [[ -z $selected ]]; then
