@@ -1,4 +1,4 @@
 return {
 	"github/copilot.vim",
-    event = { "BufReadPre", "BufNewFile" },
+	event = { "BufReadPre", "BufNewFile" },
 }
