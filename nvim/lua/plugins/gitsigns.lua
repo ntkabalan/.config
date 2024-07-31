@@ -3,7 +3,6 @@ return {
 	event = { "BufReadPost", "BufNewFile" },
 	config = function()
 		require("gitsigns").setup({
-            _extmark_signs = false,
 			attach_to_untracked = false,
 		})
 
