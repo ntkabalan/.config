@@ -48,7 +48,6 @@ return {
 					["<C-n>"] = cmp_action.luasnip_jump_forward(),
 					["<C-p>"] = cmp_action.luasnip_jump_backward(),
 					["<Enter>"] = cmp.mapping.confirm({
-						behavior = cmp.ConfirmBehavior.Replace,
 						select = true,
 					}),
 				}),
@@ -100,9 +99,11 @@ return {
 				},
 			})
 
+			local lspconfig = require("lspconfig")
+
 			-- configuration to get the vue language server working
 			-- context here: https://github.com/williamboman/mason-lspconfig.nvim/issues/371
-			require("lspconfig").volar.setup({
+			lspconfig.volar.setup({
 				filetypes = {
 					"vue",
 				},
@@ -115,7 +116,15 @@ return {
 					},
 				},
 			})
+
+			lspconfig.denols.setup({
+				root_dir = lspconfig.util.root_pattern("deno.json", "deno.jsonc"),
+			})
+
+			lspconfig.tsserver.setup({
+				root_dir = lspconfig.util.root_pattern("package.json"),
+				single_file_support = false,
+			})
 		end,
 	},
 }
-
