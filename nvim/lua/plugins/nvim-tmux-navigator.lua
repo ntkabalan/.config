@@ -17,7 +17,7 @@ return {
 		-- override netrw keybindings
 		vim.api.nvim_create_autocmd("filetype", {
 			pattern = "netrw",
-    		callback = function()
+			callback = function()
 				vim.keymap.set("n", "<C-h>", nvim_tmux_nav.NvimTmuxNavigateLeft, { remap = true, buffer = true })
 				vim.keymap.set("n", "<C-j>", nvim_tmux_nav.NvimTmuxNavigateDown, { remap = true, buffer = true })
 				vim.keymap.set("n", "<C-k>", nvim_tmux_nav.NvimTmuxNavigateUp, { remap = true, buffer = true })
