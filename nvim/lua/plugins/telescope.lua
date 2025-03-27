@@ -19,7 +19,7 @@ return {
 				find_files = {
 					hidden = true,
 					theme = "dropdown",
-					file_ignore_patterns = { ".git/" },
+					file_ignore_patterns = { ".git/", "node_modules/" },
 				},
 				live_grep = {
 					additional_args = function()
