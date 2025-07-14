@@ -9,9 +9,6 @@ vim.opt.shiftwidth = 4
 vim.opt.expandtab = true
 vim.opt.smartindent = true
 
--- highlight cursor
-vim.opt.cursorline = true
-
 -- line wrap
 vim.opt.wrap = false
 
@@ -37,7 +34,11 @@ vim.opt.isfname:append("@-@")
 vim.opt.laststatus = 3
 
 -- cursor
+vim.opt.cursorline = true
 vim.opt.guicursor = ""
+
+-- hover
+vim.opt.winborder = "single"
 
 -- misc
 vim.opt.updatetime = 50
