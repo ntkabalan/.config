@@ -27,6 +27,7 @@ return {
 				markdown = { js_formatter },
 				python = { "isort", "black" },
 				rust = { "rustfmt" },
+				swift = { "swift_format" },
 				typescript = { js_formatter },
 				typescriptreact = { js_formatter },
 				vue = { js_formatter },
