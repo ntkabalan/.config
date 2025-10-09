@@ -1,0 +1,13 @@
+background = #14161b
+foreground = #e7e9f1
+cursor-color = #d4be98
+
+cursor-style = block
+cursor-style-blink = false
+
+macos-titlebar-style = hidden
+macos-titlebar-proxy-icon = hidden
+
+window-padding-x = 10
+window-padding-y = 10
+window-padding-balance = true
