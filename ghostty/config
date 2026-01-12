@@ -5,6 +5,8 @@ cursor-color = #d4be98
 cursor-style = block
 cursor-style-blink = false
 
+shell-integration = none
+
 macos-titlebar-style = hidden
 macos-titlebar-proxy-icon = hidden
 
